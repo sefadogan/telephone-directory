@@ -1,5 +1,12 @@
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.Model\bin\Debug\TelephoneDirectory.Model.dll
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.Model\bin\Debug\TelephoneDirectory.Model.pdb
+D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.Model\bin\Debug\TelephoneDirectory.DAL.dll
+D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.Model\bin\Debug\EntityFramework.dll
+D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.Model\bin\Debug\TelephoneDirectory.DAL.pdb
+D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.Model\bin\Debug\TelephoneDirectory.DAL.dll.config
+D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.Model\bin\Debug\EntityFramework.xml
+D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.Model\obj\Debug\TelephoneDirectory.Model.csprojAssemblyReference.cache
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.Model\obj\Debug\TelephoneDirectory.Model.csproj.CoreCompileInputs.cache
+D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.Model\obj\Debug\TelephoneDirectory.Model.csproj.CopyComplete
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.Model\obj\Debug\TelephoneDirectory.Model.dll
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.Model\obj\Debug\TelephoneDirectory.Model.pdb

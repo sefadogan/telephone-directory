@@ -41,6 +41,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\VMEmployee.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ViewModel\Partials\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TelephoneDirectory.DAL\TelephoneDirectory.DAL.csproj">
+      <Project>{7F5CCC7B-386A-4E5E-8150-020A00FE272C}</Project>
+      <Name>TelephoneDirectory.DAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

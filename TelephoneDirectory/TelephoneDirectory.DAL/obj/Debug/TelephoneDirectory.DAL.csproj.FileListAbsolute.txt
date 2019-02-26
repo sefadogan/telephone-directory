@@ -5,6 +5,7 @@ D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.DAL
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.DAL\bin\Debug\EntityFramework.SqlServer.dll
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.DAL\bin\Debug\EntityFramework.xml
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.DAL\obj\Debug\TelephoneDirectory.DAL.csprojAssemblyReference.cache
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.DAL\obj\Debug\TelephoneDirectory.DAL.csproj.CoreCompileInputs.cache
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.DAL\obj\Debug\TelephoneDirectory.DAL.csproj.CopyComplete
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.DAL\obj\Debug\TelephoneDirectory.DAL.dll
