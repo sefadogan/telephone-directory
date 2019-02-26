@@ -5,6 +5,12 @@ VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelephoneDirectory.UI", "TelephoneDirectory.UI\TelephoneDirectory.UI.csproj", "{DD0279AD-F177-482E-9146-F51E0F66D5A1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelephoneDirectory.BLL", "TelephoneDirectory.BLL\TelephoneDirectory.BLL.csproj", "{50BAE1FA-86EE-4009-8786-3318CA0906A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelephoneDirectory.DAL", "TelephoneDirectory.DAL\TelephoneDirectory.DAL.csproj", "{7F5CCC7B-386A-4E5E-8150-020A00FE272C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelephoneDirectory.Model", "TelephoneDirectory.Model\TelephoneDirectory.Model.csproj", "{98E121BA-5F4A-42FA-89D3-7E480C1817BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{DD0279AD-F177-482E-9146-F51E0F66D5A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD0279AD-F177-482E-9146-F51E0F66D5A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD0279AD-F177-482E-9146-F51E0F66D5A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50BAE1FA-86EE-4009-8786-3318CA0906A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50BAE1FA-86EE-4009-8786-3318CA0906A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50BAE1FA-86EE-4009-8786-3318CA0906A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50BAE1FA-86EE-4009-8786-3318CA0906A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F5CCC7B-386A-4E5E-8150-020A00FE272C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F5CCC7B-386A-4E5E-8150-020A00FE272C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F5CCC7B-386A-4E5E-8150-020A00FE272C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F5CCC7B-386A-4E5E-8150-020A00FE272C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98E121BA-5F4A-42FA-89D3-7E480C1817BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98E121BA-5F4A-42FA-89D3-7E480C1817BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98E121BA-5F4A-42FA-89D3-7E480C1817BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98E121BA-5F4A-42FA-89D3-7E480C1817BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

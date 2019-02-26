@@ -1,0 +1,6 @@
+D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.BLL\bin\Debug\TelephoneDirectory.BLL.dll
+D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.BLL\bin\Debug\TelephoneDirectory.BLL.pdb
+D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.BLL\obj\Debug\TelephoneDirectory.BLL.csprojAssemblyReference.cache
+D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.BLL\obj\Debug\TelephoneDirectory.BLL.csproj.CoreCompileInputs.cache
+D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.BLL\obj\Debug\TelephoneDirectory.BLL.dll
+D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.BLL\obj\Debug\TelephoneDirectory.BLL.pdb

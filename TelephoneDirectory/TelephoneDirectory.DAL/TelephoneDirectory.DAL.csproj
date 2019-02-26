@@ -49,39 +49,69 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Department.cs">
+      <DependentUpon>TelephoneDirectoryEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Employee.cs">
+      <DependentUpon>TelephoneDirectoryEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Role.cs">
+      <DependentUpon>TelephoneDirectoryEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>TelephoneDirectoryEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\sp_helpdiagrams_Result.cs">
+      <DependentUpon>TelephoneDirectoryEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\sysdiagram.cs">
+      <DependentUpon>TelephoneDirectoryEntities.tt</DependentUpon>
+    </Compile>
     <Compile Include="Entities\TelephoneDirectoryEntities.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>TelephoneDirectoryEntities.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\TelephoneDirectoryEntities.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TelephoneDirectoryEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="Entities\TelephoneDirectoryEntities.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>TelephoneDirectoryEntities.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Entities\Title.cs">
+      <DependentUpon>TelephoneDirectoryEntities.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.Config" />
     <EntityDeploy Include="Entities\TelephoneDirectoryEntities.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>TelephoneDirectoryEntities.Designer.cs</LastGenOutput>
     </EntityDeploy>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.Config" />
     <None Include="Entities\TelephoneDirectoryEntities.edmx.diagram">
       <DependentUpon>TelephoneDirectoryEntities.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Entities\TelephoneDirectoryEntities.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>TelephoneDirectoryEntities.Context.cs</LastGenOutput>
-    </Content>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Content Include="Entities\TelephoneDirectoryEntities.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>TelephoneDirectoryEntities.edmx</DependentUpon>
+      <LastGenOutput>TelephoneDirectoryEntities.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Entities\TelephoneDirectoryEntities.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>TelephoneDirectoryEntities.edmx</DependentUpon>
+      <LastGenOutput>TelephoneDirectoryEntities.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
