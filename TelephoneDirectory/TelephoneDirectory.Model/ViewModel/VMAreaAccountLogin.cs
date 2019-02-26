@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace TelephoneDirectory.Model.ViewModel
 {
-    public class VMAccountLogin
+    public class VMAreaAccountLogin
     {
         [Required(ErrorMessage = "Email address is required")]
         [StringLength(50, ErrorMessage = "Must be max. 50 characters")]

@@ -155,8 +155,11 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\AccountController.cs" />
+    <Compile Include="Areas\Admin\Controllers\EmployeeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Filters\CustomAuthorization.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -4277,6 +4280,11 @@
     <Content Include="Areas\Admin\assets\global\plugins\visible\bower.json" />
     <Content Include="Areas\Admin\assets\global\plugins\visible\df-visible.jquery.json" />
     <Content Include="Areas\Admin\assets\global\plugins\visible\README.markdown" />
+    <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_SideBarMenuPartial.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_TopBarPartial.cshtml" />
+    <Content Include="Areas\Admin\Views\Employee\List.cshtml" />
+    <Content Include="Areas\Admin\Views\Employee\Profile.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -4306,7 +4314,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Models\" />
-    <Folder Include="Areas\Admin\Views\Shared\" />
+    <Folder Include="Areas\Admin\Views\Home\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

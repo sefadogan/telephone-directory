@@ -1,4 +1,3 @@
-D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\bin\Microsoft.AI.WindowsServer.xml
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\bin\ApplicationInsights.config
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\bin\TelephoneDirectory.UI.dll.config
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\bin\TelephoneDirectory.UI.dll
@@ -75,6 +74,7 @@ D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\bin\System.Diagnostics.DiagnosticSource.xml
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\bin\Microsoft.AI.DependencyCollector.xml
+D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\bin\Microsoft.AI.WindowsServer.xml
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\bin\Microsoft.AI.Web.xml
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\bin\TelephoneDirectory.Core.pdb

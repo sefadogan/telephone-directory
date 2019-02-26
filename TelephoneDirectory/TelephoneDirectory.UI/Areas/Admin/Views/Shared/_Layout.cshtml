@@ -1,0 +1,126 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="admin-themes-lab">
+    <meta name="author" content="themes-lab">
+    <link rel="shortcut icon" href="~/Areas/Admin/assets/global/images/favicon.png" type="image/png">
+    <title>@ViewBag.Title - Shifter and Worker</title>
+    <link href="~/Areas/Admin/assets/global/css/style.css" rel="stylesheet">
+    <link href="~/Areas/Admin/assets/global/css/theme.css" rel="stylesheet">
+    <link href="~/Areas/Admin/assets/global/css/ui.css" rel="stylesheet">
+    <link href="~/Areas/Admin/assets/admin/layout/css/layout.css" rel="stylesheet">
+
+    <!-- BEGIN PAGE STYLE -->
+    <link href="~/Areas/Admin/assets/global/plugins/metrojs/metrojs.min.css" rel="stylesheet">
+    <link href="~/Areas/Admin/assets/global/plugins/maps-amcharts/ammap/ammap.css" rel="stylesheet">
+    <!-- END PAGE STYLE -->
+
+    <script src="~/Areas/Admin/assets/global/plugins/modernizr/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+</head>
+<body class="fixed-topbar fixed-sidebar theme-sdtl color-default dashboard">
+    <!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <section>
+
+        @Html.Action("GetSideBarMenuPartial", "Home")
+
+        <div class="main-content">
+            @Html.Action("GetTopBarPartial", "Home")
+
+            @RenderBody()
+
+            <!-- BEGIN FOOTER -->
+            <div class="footer">
+                <div class="copyright">
+                    <p class="pull-left sm-pull-reset">
+                        Copyright &copy; @DateTime.Now.Year Shifter and Worker | All rights reserved.
+                    </p>
+                    <p class="pull-right sm-pull-reset">
+                        <span><a href="#" class="m-r-10">Support</a> | <a href="#" class="m-l-10 m-r-10">Terms of use</a> | <a href="#" class="m-l-10">Privacy Policy</a></span>
+                    </p>
+                </div>
+            </div>
+            <!-- END FOOTER -->
+        </div>
+
+    </section>
+
+    <!-- BEGIN PRELOADER -->
+    <div class="loader-overlay">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- END PRELOADER -->
+
+    <a href="#" class="scrollup"><i class="fa fa-angle-up"></i></a>
+
+    <script src="~/Areas/Admin/assets/global/plugins/jquery/jquery-3.1.0.min.js"></script>
+    <script src="~/Areas/Admin/assets/global/plugins/jquery/jquery-migrate-3.0.0.min.js"></script>
+    <script src="~/Areas/Admin/assets/global/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <script src="~/Areas/Admin/assets/global/plugins/gsap/main-gsap.min.js"></script>
+    <script src="~/Areas/Admin/assets/global/plugins/tether/js/tether.min.js"></script>
+    <script src="~/Areas/Admin/assets/global/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/Areas/Admin/assets/global/plugins/appear/jquery.appear.js"></script>
+    <script src="~/Areas/Admin/assets/global/plugins/jquery-cookies/jquery.cookies.min.js"></script> <!-- Jquery Cookies, for theme -->
+    <script src="~/Areas/Admin/assets/global/plugins/jquery-block-ui/jquery.blockUI.min.js"></script> <!-- simulate synchronous behavior when using AJAX -->
+    <script src="~/Areas/Admin/assets/global/plugins/bootbox/bootbox.min.js"></script> <!-- Modal with Validation -->
+    <script src="~/Areas/Admin/assets/global/plugins/mcustom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script> <!-- Custom Scrollbar sidebar -->
+    <script src="~/Areas/Admin/assets/global/plugins/bootstrap-dropdown/bootstrap-hover-dropdown.min.js"></script> <!-- Show Dropdown on Mouseover -->
+    <script src="~/Areas/Admin/assets/global/plugins/charts-sparkline/sparkline.min.js"></script> <!-- Charts Sparkline -->
+    <script src="~/Areas/Admin/assets/global/plugins/retina/retina.min.js"></script> <!-- Retina Display -->
+    <script src="~/Areas/Admin/assets/global/plugins/select2/dist/js/select2.full.min.js"></script> <!-- Select Inputs -->
+    <script src="~/Areas/Admin/assets/global/plugins/icheck/icheck.min.js"></script> <!-- Checkbox & Radio Inputs -->
+    <script src="~/Areas/Admin/assets/global/plugins/backstretch/backstretch.min.js"></script> <!-- Background Image -->
+    <script src="~/Areas/Admin/assets/global/plugins/bootstrap-progressbar/bootstrap-progressbar.min.js"></script> <!-- Animated Progress Bar -->
+    <script src="~/Areas/Admin/assets/global/js/builder.js"></script> <!-- Theme Builder -->
+    <script src="~/Areas/Admin/assets/global/js/sidebar_hover.js"></script> <!-- Sidebar on Hover -->
+    <script src="~/Areas/Admin/assets/global/js/application.js"></script> <!-- Main Application Script -->
+    <script src="~/Areas/Admin/assets/global/js/plugins.js"></script> <!-- Main Plugin Initialization Script -->
+    <script src="~/Areas/Admin/assets/global/js/widgets/notes.js"></script> <!-- Notes Widget -->
+    <script src="~/Areas/Admin/assets/global/js/quickview.js"></script> <!-- Chat Script -->
+    <!-- <script src="~/Areas/Admin/assets/global/js/pages/search.js"></script> Search Script -->
+    <!-- BEGIN DASHBOARD PAGE SCRIPT -->
+    <script src="~/Areas/Admin/assets/global/plugins/metrojs/metrojs.min.js"></script> <!-- Flipping Panel -->
+    <script src="~/Areas/Admin/assets/global/plugins/noty/jquery.noty.packaged.min.js"></script>  <!-- Notifications -->
+    <script src="~/Areas/Admin/assets/global/plugins/bootstrap-editable/js/bootstrap-editable.min.js"></script> <!-- Inline Edition X-editable -->
+    <script src="~/Areas/Admin/assets/global/plugins/bootstrap-context-menu/bootstrap-contextmenu.min.js"></script> <!-- Context Menu -->
+    <script src="~/Areas/Admin/assets/global/plugins/multidatepicker/multidatespicker.min.js"></script> <!-- Multi dates Picker -->
+    <script src="~/Areas/Admin/assets/global/plugins/charts-chartjs/Chart.min.js"></script>  <!-- ChartJS Chart -->
+    <script src="~/Areas/Admin/assets/global/plugins/charts-highstock/js/highstock.js"></script> <!-- financial Charts -->
+    <script src="~/Areas/Admin/assets/global/plugins/charts-highstock/js/modules/exporting.js"></script> <!-- Financial Charts Export Tool -->
+    <script src="~/Areas/Admin/assets/global/plugins/maps-amcharts/ammap/ammap.js"></script> <!-- Vector Map -->
+    <script src="~/Areas/Admin/assets/global/plugins/maps-amcharts/ammap/maps/js/worldLow.js"></script> <!-- Vector World Map  -->
+    <script src="~/Areas/Admin/assets/global/plugins/maps-amcharts/ammap/themes/black.js"></script> <!-- Vector Map Black Theme -->
+    <script src="~/Areas/Admin/assets/global/plugins/skycons/skycons.min.js"></script> <!-- Animated Weather Icons -->
+    <script src="~/Areas/Admin/assets/global/plugins/simple-weather/jquery.simpleWeather.js"></script> <!-- Weather Plugin -->
+    <script src="~/Areas/Admin/assets/global/js/widgets/todo_list.js"></script>
+    <script src="~/Areas/Admin/assets/global/js/widgets/widget_weather.js"></script>
+    <script src="~/Areas/Admin/assets/global/js/pages/dashboard.js"></script>
+    <!-- END PAGE SCRIPT -->
+    <!-- BEGIN USER PROFILE PAGE SCRIPT -->
+    <script src="~/Areas/Admin/assets/global/plugins/gsap/main-gsap.min.js"></script> <!-- HTML Animations -->
+    <script src="~/Areas/Admin/assets/global/plugins/slick/slick.min.js"></script> <!-- Slider -->
+    <script src="~/Areas/Admin/assets/global/plugins/countup/countUp.min.js"></script> <!-- Animated Counter Number -->
+    <script src="~/Areas/Admin/assets/global/plugins/autosize/autosize.min.js"></script> <!-- Textarea autoresize -->
+    <script src="//maps.google.com/maps/api/js"></script>  <!-- Google Maps -->
+    <script src="~/Areas/Admin/assets/global/plugins/google-maps/gmaps.min.js"></script>  <!-- Google Maps Easy -->
+    <script src="~/Areas/Admin/assets/global/js/pages/profil.js"></script>
+    <!-- END PAGE SCRIPTS -->
+
+
+    <script src="~/Areas/Admin/assets/admin/layout/js/layout.js"></script>
+
+</body>
+</html>

@@ -22,7 +22,7 @@ namespace TelephoneDirectory.UI.Controllers
 
         public ActionResult List()
         {
-            List<Employee> employees = _uow.EmployeeRepository.ListAll(x => x.IsActive);
+            List<Employee> employees = _uow.EmployeeRepository.ListAll(x => x.IsActive).OrderByDescending(x => x.CreateDate).ToList();
 
             if (employees.Count == 0)
             {
@@ -38,7 +38,7 @@ namespace TelephoneDirectory.UI.Controllers
         public ActionResult Detail(int id)
         {
             Employee employee = _uow.EmployeeRepository.BringById(id);
-            if(employee == null)
+            if (employee == null)
             {
                 TempData["ProcessResult"] = "There are no employees to be displayed.";
                 TempData["AlertType"] = "info";
