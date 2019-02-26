@@ -48,14 +48,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\IBaseRepository.cs" />
+    <Compile Include="Abstract\IEmployeeRepository.cs" />
+    <Compile Include="Concrete\BaseRepository.cs" />
+    <Compile Include="Concrete\EmployeeRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Concrete\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TelephoneDirectory.Core\TelephoneDirectory.Core.csproj">
+      <Project>{CF676F21-17D1-4AC5-B9F2-84199D9A0EC5}</Project>
+      <Name>TelephoneDirectory.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TelephoneDirectory.DAL\TelephoneDirectory.DAL.csproj">
+      <Project>{7F5CCC7B-386A-4E5E-8150-020A00FE272C}</Project>
+      <Name>TelephoneDirectory.DAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

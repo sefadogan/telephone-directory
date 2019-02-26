@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelephoneDirectory.DAL", "T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelephoneDirectory.Model", "TelephoneDirectory.Model\TelephoneDirectory.Model.csproj", "{98E121BA-5F4A-42FA-89D3-7E480C1817BF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelephoneDirectory.Core", "TelephoneDirectory.Core\TelephoneDirectory.Core.csproj", "{CF676F21-17D1-4AC5-B9F2-84199D9A0EC5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{98E121BA-5F4A-42FA-89D3-7E480C1817BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98E121BA-5F4A-42FA-89D3-7E480C1817BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98E121BA-5F4A-42FA-89D3-7E480C1817BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF676F21-17D1-4AC5-B9F2-84199D9A0EC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF676F21-17D1-4AC5-B9F2-84199D9A0EC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF676F21-17D1-4AC5-B9F2-84199D9A0EC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF676F21-17D1-4AC5-B9F2-84199D9A0EC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
