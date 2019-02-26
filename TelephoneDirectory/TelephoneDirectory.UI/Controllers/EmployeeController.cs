@@ -42,7 +42,7 @@ namespace TelephoneDirectory.UI.Controllers
             {
                 TempData["ProcessResult"] = "There are no employees to be displayed.";
                 TempData["AlertType"] = "info";
-                return View();
+                return RedirectToAction("List");
             }
 
             return View(employee);
