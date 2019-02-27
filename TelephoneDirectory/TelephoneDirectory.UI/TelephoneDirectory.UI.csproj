@@ -527,7 +527,7 @@
     <Content Include="Areas\Admin\assets\global\images\layouts\topbar-fixed.jpg" />
     <Content Include="Areas\Admin\assets\global\images\layouts\topbar-fluid.jpg" />
     <Content Include="Areas\Admin\assets\global\images\logo\logo-dark.png" />
-    <Content Include="Areas\Admin\assets\global\images\logo\saw-logo-white.png" />
+    <Content Include="Areas\Admin\assets\global\images\logo\td-logo-white.png" />
     <Content Include="Areas\Admin\assets\global\images\logo\themeforest.png" />
     <Content Include="Areas\Admin\assets\global\images\logo\themes-lab.png" />
     <Content Include="Areas\Admin\assets\global\images\magnifier.svg" />
@@ -4289,6 +4289,7 @@
     <Content Include="Areas\Admin\Views\Employee\Create.cshtml" />
     <Content Include="Areas\Admin\Views\Employee\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Department\List.cshtml" />
+    <Content Include="Areas\Admin\Views\Department\Create.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

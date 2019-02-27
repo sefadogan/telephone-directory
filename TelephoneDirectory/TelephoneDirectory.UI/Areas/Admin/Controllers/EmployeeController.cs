@@ -104,12 +104,12 @@ namespace TelephoneDirectory.UI.Areas.Admin.Controllers
         [HttpPost]
         public ActionResult Create(Employee model)
         {
-            #region Check whether the system is user
+            #region Check whether employee in the system
 
             Employee emp = _uow.EmployeeRepository.BringByEmail(model.Email);
             if (emp != null && emp.Email == model.Email)
             {
-                TempData["ProcessResult"] = "There is a employee in the system for this mail.";
+                TempData["ProcessResult"] = "There is an employee in the system for this mail.";
                 TempData["AlertType"] = "danger";
                 return RedirectToAction("Create"); // return view dediğimde Create action unun get ine düşmüyor.
             }
@@ -117,7 +117,7 @@ namespace TelephoneDirectory.UI.Areas.Admin.Controllers
             emp = _uow.EmployeeRepository.BringByTelephone(model.Telephone);
             if (emp != null && emp.Telephone == model.Telephone)
             {
-                TempData["ProcessResult"] = "There is a employee in the system for this telephone.";
+                TempData["ProcessResult"] = "There is an employee in the system for this telephone.";
                 TempData["AlertType"] = "danger";
                 return RedirectToAction("Create");
             }
@@ -132,7 +132,7 @@ namespace TelephoneDirectory.UI.Areas.Admin.Controllers
             var result = _uow.EmployeeRepository.Add(model);
             if (!_uow.SaveChanges())
             {
-                TempData["ProcessResult"] = "An unexpected error occurred while adding an employee";
+                TempData["ProcessResult"] = "An unexpected error occurred while creating an employee.";
                 TempData["AlertType"] = "danger";
                 return RedirectToAction("Create");
             }

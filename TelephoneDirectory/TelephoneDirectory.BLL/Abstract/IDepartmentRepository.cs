@@ -11,5 +11,6 @@ namespace TelephoneDirectory.BLL.Abstract
     public interface IDepartmentRepository : IBaseRepository<Department, int, TelephoneDirectoryEntities>
     {
         AppReturn Delete(int id);
+        Department BringByName(string name);
     }
 }

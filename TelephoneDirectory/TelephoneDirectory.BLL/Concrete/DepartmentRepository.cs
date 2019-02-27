@@ -32,5 +32,9 @@ namespace TelephoneDirectory.BLL.Concrete
                 return AppReturn.InvalidOperation("An unexpected error has occured while deleting department.");
             }
         }
+        public Department BringByName(string name)
+        {
+            return _context.Departments.FirstOrDefault(x => x.Name == name);
+        }
     }
 }

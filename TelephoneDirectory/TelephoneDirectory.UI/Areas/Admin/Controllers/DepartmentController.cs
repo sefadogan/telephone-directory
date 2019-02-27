@@ -36,6 +36,10 @@ namespace TelephoneDirectory.UI.Areas.Admin.Controllers
 
             return View(vmAreaDepartment);
         }
+        public ActionResult Create()
+        {
+            return View();
+        }
 
         [HttpPost]
         public ActionResult Delete(int id)
@@ -77,6 +81,37 @@ namespace TelephoneDirectory.UI.Areas.Admin.Controllers
                 message = result.Message,
             };
             return jsonResult;
+        }
+
+        [HttpPost]
+        public ActionResult Create(Department model)
+        {
+            #region Check whether department in the system
+
+            Department dept = _uow.DepartmentRepository.BringByName(model.Name);
+            if (dept != null && dept.Name == model.Name)
+            {
+                TempData["ProcessResult"] = "There is a department with this name in the system";
+                TempData["AlertType"] = "danger";
+                return View(); 
+            }
+
+            #endregion
+
+            model.CreateDate = DateTime.Now;
+            model.IsActive = true;
+
+            var result = _uow.DepartmentRepository.Add(model);
+            if (!_uow.SaveChanges())
+            {
+                TempData["ProcessResult"] = "An unexpected error occurred while creating an department.";
+                TempData["AlertType"] = "danger";
+                return View();
+            }
+
+            TempData["ProcessResult"] = "Department created successfully.";
+            TempData["AlertType"] = "success";
+            return RedirectToAction("List");
         }
     }
 }
