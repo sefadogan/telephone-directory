@@ -262,8 +262,6 @@
           <Property Name="DepartmentId" Type="Int32" Nullable="false" />
           <Property Name="TitleId" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Department" Relationship="TelephoneDirectoryModel.FK_Employees_Departments" FromRole="Employee" ToRole="Department" />
-          <NavigationProperty Name="Employees1" Relationship="TelephoneDirectoryModel.FK_Employees_Employees" FromRole="Employee" ToRole="Employee1" />
-          <NavigationProperty Name="Employee1" Relationship="TelephoneDirectoryModel.FK_Employees_Employees" FromRole="Employee1" ToRole="Employee" />
           <NavigationProperty Name="Role" Relationship="TelephoneDirectoryModel.FK_Employees_Roles" FromRole="Employee" ToRole="Role" />
           <NavigationProperty Name="Title" Relationship="TelephoneDirectoryModel.FK_Employees_Titles" FromRole="Employee" ToRole="Title" />
         </EntityType>

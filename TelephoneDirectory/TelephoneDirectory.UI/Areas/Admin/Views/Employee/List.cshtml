@@ -21,6 +21,11 @@
                     </button>
                 </div>
             }
+            <div class="alert" role="alert" id="postResult" style="display:none;">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
             <a href="/Admin/Employee/Create" class="btn btn-sm btn-dark">
                 <i class="fa fa-plus"></i>&nbsp; Add New Employee
             </a>
@@ -36,9 +41,8 @@
                                 <th class="col-md-2">Name</th>
                                 <th class="col-md-2">Title</th>
                                 <th class="col-md-2">Department Name</th>
-                                <th class="col-md-1">Phone</th>
+                                <th class="col-md-2">Phone</th>
                                 <th class="col-md-1">Create Date</th>
-                                <th class="col-md-1">Status</th>
                                 <th class="col-md-1"></th>
                             </tr>
                         </thead>
@@ -54,21 +58,9 @@
                                         <td>@employee.DepartmentName</td>
                                         <td>@employee.Telephone</td>
                                         <td>@employee.CreateDate.ToShortDateString()</td>
-                                        <td>
-                                            @{
-                                                if (employee.IsActive)
-                                                {
-                                                    <span class="label label-success label-mini">Active</span>
-                                                }
-                                                else
-                                                {
-                                                    <span class="label label-danger label-mini">Passive</span>
-                                                }
-                                            }
-                                        </td>
                                         <td style="text-align:right;">
                                             <a class="edit btn btn-sm btn-default" href="/Admin/Employee/Edit/@employee.EmployeeId"><i class="icon-note"></i></a>
-                                            <a class="delete btn btn-sm btn-danger" href="/Admin/Employee/Delete/@employee.EmployeeId"><i class="icons-office-52"></i></a>
+                                            <button class="delete btn btn-sm btn-danger" onclick="deleteEmployee(@employee.EmployeeId)"><i class="icons-office-52"></i></button>
                                         </td>
                                     </tr>
                                     line++;
@@ -82,3 +74,23 @@
     </div>
 </div>
 <!-- END PAGE CONTENT -->
+
+<script>
+    function deleteEmployee(employeeId) {
+        if (confirm("Are you sure about deleting this employee?")) {
+            $.ajax({
+                url: "/Admin/Employee/Delete",
+                type: "POST",
+                data: { id: employeeId },
+                success: function (data) {
+                    if (data.success) {
+                        alert(data.message)
+                        location.reload();
+                    }
+                    else
+                        $("#postResult").addClass("alert-danger").append(data.message).show();
+                }
+            });
+        }
+    };
+</script>

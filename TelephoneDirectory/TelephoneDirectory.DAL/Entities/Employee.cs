@@ -14,12 +14,6 @@ namespace TelephoneDirectory.DAL.Entities
     
     public partial class Employee
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Employee()
-        {
-            this.Employees1 = new HashSet<Employee>();
-        }
-    
         public int EmployeeId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -35,9 +29,6 @@ namespace TelephoneDirectory.DAL.Entities
         public int TitleId { get; set; }
     
         public virtual Department Department { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Employee> Employees1 { get; set; }
-        public virtual Employee Employee1 { get; set; }
         public virtual Role Role { get; set; }
         public virtual Title Title { get; set; }
     }
