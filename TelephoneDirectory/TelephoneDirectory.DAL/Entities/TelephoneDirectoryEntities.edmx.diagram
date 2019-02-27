@@ -5,11 +5,11 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="9b85a3d162dc4d2d800690b7c75e1e07" Name="Diagram1">
-        <EntityTypeShape EntityType="TelephoneDirectoryModel.Department" Width="1.5" PointX="0.75" PointY="9.375" />
-        <EntityTypeShape EntityType="TelephoneDirectoryModel.Employee" Width="1.5" PointX="3" PointY="1" />
-        <EntityTypeShape EntityType="TelephoneDirectoryModel.Role" Width="1.5" PointX="0.75" PointY="5.875" />
-        <EntityTypeShape EntityType="TelephoneDirectoryModel.sysdiagram" Width="1.5" PointX="5.75" PointY="0.75" />
-        <EntityTypeShape EntityType="TelephoneDirectoryModel.Title" Width="1.5" PointX="0.75" PointY="2.25" />
+        <EntityTypeShape EntityType="TelephoneDirectoryModel.Department" Width="1.5" PointX="0.75" PointY="3.875" />
+        <EntityTypeShape EntityType="TelephoneDirectoryModel.Employee" Width="1.5" PointX="3" PointY="2.875" />
+        <EntityTypeShape EntityType="TelephoneDirectoryModel.Role" Width="1.5" PointX="0.75" PointY="7.625" />
+        <EntityTypeShape EntityType="TelephoneDirectoryModel.sysdiagram" Width="1.5" PointX="5.75" PointY="2.625" />
+        <EntityTypeShape EntityType="TelephoneDirectoryModel.Title" Width="1.5" PointX="0.75" PointY="0.75" />
         <AssociationConnector Association="TelephoneDirectoryModel.FK_Employees_Departments" />
         <AssociationConnector Association="TelephoneDirectoryModel.FK_Employees_Employees" />
         <AssociationConnector Association="TelephoneDirectoryModel.FK_Employees_Roles" />

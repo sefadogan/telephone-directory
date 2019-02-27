@@ -40,6 +40,15 @@ namespace TelephoneDirectory.UI.Areas.Admin.Controllers
         {
             return View();
         }
+        public ActionResult Edit(int id)
+        {
+            Session["SelectedDepartmentId"] = id; // Bilgiler post edildiğinde post metodunda yakalayabilmek adına oluşturuldu.
+
+            Department department = _uow.DepartmentRepository.BringById(id);
+            VMAreaDepartmentEdit vmAreaDepartmentEdit = VMAreaDepartmentEdit.Parse(department);
+
+            return View(vmAreaDepartmentEdit);
+        }
 
         [HttpPost]
         public ActionResult Delete(int id)
@@ -93,7 +102,7 @@ namespace TelephoneDirectory.UI.Areas.Admin.Controllers
             {
                 TempData["ProcessResult"] = "There is a department with this name in the system";
                 TempData["AlertType"] = "danger";
-                return View(); 
+                return View();
             }
 
             #endregion
@@ -110,6 +119,30 @@ namespace TelephoneDirectory.UI.Areas.Admin.Controllers
             }
 
             TempData["ProcessResult"] = "Department created successfully.";
+            TempData["AlertType"] = "success";
+            return RedirectToAction("List");
+        }
+
+        [HttpPost]
+        public ActionResult Edit(Department model)
+        {
+
+            Department department = _uow.DepartmentRepository.BringById(Convert.ToInt32(Session["SelectedDepartmentId"]));
+            department.Name = model.Name;
+            department.Description = model.Description;
+            department.Abridgment = model.Abridgment;
+
+            var result = _uow.DepartmentRepository.Update(model);
+
+            Session.Remove("SelectedDepartmentId");
+            if (!_uow.SaveChanges())
+            {
+                TempData["ProcessResult"] = "An unexpected error occurred while updating department.";
+                TempData["AlertType"] = "danger";
+                return RedirectToAction("List");
+            }
+
+            TempData["ProcessResult"] = "Department updated successfully.";
             TempData["AlertType"] = "success";
             return RedirectToAction("List");
         }
