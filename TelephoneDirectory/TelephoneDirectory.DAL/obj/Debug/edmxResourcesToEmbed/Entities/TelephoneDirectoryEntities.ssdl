@@ -18,6 +18,7 @@
     <Property Name="EmployeeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="FirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="LastName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DisplayName" Type="nvarchar" MaxLength="100" />
     <Property Name="Telephone" Type="varchar" MaxLength="10" Nullable="false" />
     <Property Name="Email" Type="nvarchar" MaxLength="50" />
     <Property Name="Password" Type="nvarchar" MaxLength="18" />
@@ -26,7 +27,7 @@
     <Property Name="RoleId" Type="int" Nullable="false" />
     <Property Name="SupervisorId" Type="int" Nullable="false" />
     <Property Name="DepartmentId" Type="int" Nullable="false" />
-    <Property Name="TitleId" Type="int" />
+    <Property Name="TitleId" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Roles">
     <Key>
@@ -93,7 +94,7 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Employees_Titles">
-    <End Role="Titles" Type="Self.Titles" Multiplicity="0..1" />
+    <End Role="Titles" Type="Self.Titles" Multiplicity="1" />
     <End Role="Employees" Type="Self.Employees" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Titles">

@@ -14,7 +14,7 @@
             <div class="userlogged clearfix">
                 <i class="icon icons-faces-users-01"></i>
                 <div class="user-details">
-                    <h4>@Model.FirstName @Model.LastName</h4>
+                    <h4>@Model.DisplayName</h4>
                     <div class="dropdown user-login">
                         <button class="btn btn-xs dropdown-toggle btn-rounded" type="button" data-toggle="dropdown" data-hover="dropdown" data-close-others="true" data-delay="300">
                             <i class="online"></i><span>Available</span><i class="fa fa-angle-down"></i>
@@ -46,14 +46,14 @@
                 <a href=""><i class="icon-user"></i><span>Employee Management</span><span class="fa arrow"></span></a>
                 <ul class="children collapse">
                     <li><a href="/Admin/Employee/List"> <span class="pull-right badge badge-primary">16</span> Employee List</a></li>
-                    <li><a href="/Admin/Employee/Add">  Add Employee</a></li>
+                    <li><a href="/Admin/Employee/Create">  Create Employee</a></li>
                 </ul>
             </li>
             <li class="nav-parent">
                 <a href=""><i class="icon-calendar"></i><span>Department Management</span><span class="fa arrow"></span></a>
                 <ul class="children collapse">
                     <li><a href="/Admin/Department/List"> <span class="pull-right badge badge-primary">16</span> Department List</a></li>
-                    <li><a href="/Admin/Department/Add">  Add Department</a></li>
+                    <li><a href="/Admin/Department/Create">  Create Department</a></li>
                 </ul>
             </li>
             @*<li class="nav-parent">

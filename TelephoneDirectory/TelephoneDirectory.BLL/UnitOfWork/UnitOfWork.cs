@@ -13,6 +13,8 @@ namespace TelephoneDirectory.BLL.UnitOfWork
     {
         private readonly TelephoneDirectoryEntities _context;
         private IEmployeeRepository employeeRepository;
+        private IDepartmentRepository departmentRepository;
+        private ITitleRepository titleRepository;
 
         public UnitOfWork(TelephoneDirectoryEntities context)
         {
@@ -20,6 +22,9 @@ namespace TelephoneDirectory.BLL.UnitOfWork
         }
 
         public IEmployeeRepository EmployeeRepository => employeeRepository ?? (employeeRepository = new EmployeeRepository(_context));
+        public IDepartmentRepository DepartmentRepository => departmentRepository ?? (departmentRepository = new DepartmentRepository(_context));
+        public ITitleRepository TitleRepository => titleRepository ?? (titleRepository = new TitleRepository(_context));
+
         public void Dispose()
         {
             if (_context != null)
@@ -35,7 +40,7 @@ namespace TelephoneDirectory.BLL.UnitOfWork
                 _context.SaveChanges();
                 return true; 
             }
-            catch (Exception)
+            catch (Exception e)
             {
                 // Logging must add here.
                 return false;

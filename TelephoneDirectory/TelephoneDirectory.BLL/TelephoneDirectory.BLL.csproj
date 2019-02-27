@@ -48,9 +48,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\IBaseRepository.cs" />
+    <Compile Include="Abstract\IDepartmentRepository.cs" />
     <Compile Include="Abstract\IEmployeeRepository.cs" />
+    <Compile Include="Abstract\ITitleRepository.cs" />
     <Compile Include="Concrete\BaseRepository.cs" />
+    <Compile Include="Concrete\DepartmentRepository.cs" />
     <Compile Include="Concrete\EmployeeRepository.cs" />
+    <Compile Include="Concrete\TitleRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UnitOfWork\IUnitOfWork.cs" />
     <Compile Include="UnitOfWork\UnitOfWork.cs" />

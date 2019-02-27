@@ -1,3 +1,5 @@
+D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\obj\Debug\TelephoneDirectory.UI.csprojAssemblyReference.cache
+D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\obj\Debug\TelephoneDirectory.UI.csproj.CoreCompileInputs.cache
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\bin\ApplicationInsights.config
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\bin\TelephoneDirectory.UI.dll.config
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\bin\TelephoneDirectory.UI.dll
@@ -51,12 +53,13 @@ D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\bin\System.Web.WebPages.dll
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\bin\System.Web.WebPages.Razor.dll
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\bin\TelephoneDirectory.BLL.dll
+D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\bin\TelephoneDirectory.Core.dll
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\bin\TelephoneDirectory.DAL.dll
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\bin\TelephoneDirectory.Model.dll
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\bin\WebGrease.dll
-D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\bin\TelephoneDirectory.Core.dll
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\bin\TelephoneDirectory.BLL.pdb
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\bin\TelephoneDirectory.BLL.dll.config
+D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\bin\TelephoneDirectory.Core.pdb
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\bin\TelephoneDirectory.DAL.pdb
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\bin\TelephoneDirectory.DAL.dll.config
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\bin\TelephoneDirectory.Model.pdb
@@ -77,9 +80,6 @@ D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\bin\Microsoft.AI.WindowsServer.xml
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\bin\Microsoft.AI.Web.xml
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\bin\TelephoneDirectory.Core.pdb
-D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\obj\Debug\TelephoneDirectory.UI.csprojAssemblyReference.cache
-D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\obj\Debug\TelephoneDirectory.UI.csproj.CoreCompileInputs.cache
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\obj\Debug\TelephoneDirectory.UI.csproj.CopyComplete
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\obj\Debug\TelephoneDirectory.UI.dll
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\obj\Debug\TelephoneDirectory.UI.pdb

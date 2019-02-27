@@ -11,13 +11,15 @@ namespace TelephoneDirectory.Model.ViewModel.Partials
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public string DisplayName { get; set; }
 
         public static VMAreaSideBarMenu Parse(Employee item)
         {
             VMAreaSideBarMenu result = new VMAreaSideBarMenu
             {
                 FirstName = item.FirstName,
-                LastName = item.LastName
+                LastName = item.LastName,
+                DisplayName = item.DisplayName
             };
 
             return result;

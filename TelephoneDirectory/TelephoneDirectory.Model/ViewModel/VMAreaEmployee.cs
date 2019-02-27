@@ -12,6 +12,7 @@ namespace TelephoneDirectory.Model.ViewModel
         public int EmployeeId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public string DisplayName { get; set; }
         public string Telephone { get; set; }
         public string Email { get; set; }
         public bool IsActive { get; set; }
@@ -26,6 +27,7 @@ namespace TelephoneDirectory.Model.ViewModel
                 EmployeeId = item.EmployeeId,
                 FirstName = item.FirstName,
                 LastName = item.LastName,
+                DisplayName = item.DisplayName,
                 Telephone = item.Telephone,
                 Email = item.Email,
                 IsActive = item.IsActive,

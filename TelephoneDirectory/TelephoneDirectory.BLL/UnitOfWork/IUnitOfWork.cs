@@ -10,6 +10,8 @@ namespace TelephoneDirectory.BLL.UnitOfWork
     public interface IUnitOfWork : IDisposable
     {
         IEmployeeRepository EmployeeRepository { get; }
+        IDepartmentRepository DepartmentRepository { get; }
+        ITitleRepository TitleRepository { get; }
        
         bool SaveChanges();
     }

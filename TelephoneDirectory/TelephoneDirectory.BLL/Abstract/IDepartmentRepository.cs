@@ -7,9 +7,7 @@ using TelephoneDirectory.DAL.Entities;
 
 namespace TelephoneDirectory.BLL.Abstract
 {
-    public interface IEmployeeRepository : IBaseRepository<Employee, int, TelephoneDirectoryEntities>
+    public interface IDepartmentRepository : IBaseRepository<Department, int, TelephoneDirectoryEntities>
     {
-        Employee BringByEmail(string email);
-        Employee BringByTelephone(string telephone);
     }
 }

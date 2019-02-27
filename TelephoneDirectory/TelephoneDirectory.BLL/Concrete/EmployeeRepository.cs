@@ -18,9 +18,13 @@ namespace TelephoneDirectory.BLL.Concrete
             _context = context;
         }
 
-        public Employee GetEmployeeByEmail(string email)
+        public Employee BringByEmail(string email)
         {
             return _context.Employees.FirstOrDefault(x => x.Email == email);
+        }
+        public Employee BringByTelephone(string telephone)
+        {
+            return _context.Employees.FirstOrDefault(x => x.Telephone == telephone);
         }
     }
 }

@@ -31,7 +31,7 @@ namespace TelephoneDirectory.UI.Areas.Admin.Controllers
         }
         public ActionResult Logout()
         {
-            Session.Remove("LoggedUser");
+            Session.Remove("LoggedEmployee");
             return RedirectToAction("Login", "Account");
         }
 
@@ -43,7 +43,7 @@ namespace TelephoneDirectory.UI.Areas.Admin.Controllers
                 return View(model);
             }
 
-            Employee employee = _uow.EmployeeRepository.GetEmployeeByEmail(model.Email);
+            Employee employee = _uow.EmployeeRepository.BringByEmail(model.Email);
             if (employee == null)
             {
                 TempData["ProcessResult"] = "There is no such employee in our system.";

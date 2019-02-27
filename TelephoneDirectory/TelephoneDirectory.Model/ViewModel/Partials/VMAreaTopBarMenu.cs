@@ -9,15 +9,19 @@ namespace TelephoneDirectory.Model.ViewModel.Partials
 {
     public class VMAreaTopBarMenu
     {
+        public int EmployeeId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public string DisplayName { get; set; }
 
         public static VMAreaTopBarMenu Parse(Employee item)
         {
             VMAreaTopBarMenu result = new VMAreaTopBarMenu
             {
+                EmployeeId = item.EmployeeId,
                 FirstName = item.FirstName,
-                LastName = item.LastName
+                LastName = item.LastName,
+                DisplayName = item.DisplayName
             };
 
             return result;

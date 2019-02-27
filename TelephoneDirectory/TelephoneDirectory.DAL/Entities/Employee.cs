@@ -23,6 +23,7 @@ namespace TelephoneDirectory.DAL.Entities
         public int EmployeeId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public string DisplayName { get; set; }
         public string Telephone { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
@@ -31,7 +32,7 @@ namespace TelephoneDirectory.DAL.Entities
         public int RoleId { get; set; }
         public int SupervisorId { get; set; }
         public int DepartmentId { get; set; }
-        public Nullable<int> TitleId { get; set; }
+        public int TitleId { get; set; }
     
         public virtual Department Department { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

@@ -4284,7 +4284,8 @@
     <Content Include="Areas\Admin\Views\Shared\_SideBarMenuPartial.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_TopBarPartial.cshtml" />
     <Content Include="Areas\Admin\Views\Employee\List.cshtml" />
-    <Content Include="Areas\Admin\Views\Employee\Profile.cshtml" />
+    <Content Include="Areas\Admin\Views\Employee\ChangePassword.cshtml" />
+    <Content Include="Areas\Admin\Views\Employee\Create.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -4334,6 +4335,10 @@
     <ProjectReference Include="..\TelephoneDirectory.BLL\TelephoneDirectory.BLL.csproj">
       <Project>{50BAE1FA-86EE-4009-8786-3318CA0906A9}</Project>
       <Name>TelephoneDirectory.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TelephoneDirectory.Core\TelephoneDirectory.Core.csproj">
+      <Project>{CF676F21-17D1-4AC5-B9F2-84199D9A0EC5}</Project>
+      <Name>TelephoneDirectory.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\TelephoneDirectory.DAL\TelephoneDirectory.DAL.csproj">
       <Project>{7F5CCC7B-386A-4E5E-8150-020A00FE272C}</Project>
