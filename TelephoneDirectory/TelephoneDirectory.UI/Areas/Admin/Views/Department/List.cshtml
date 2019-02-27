@@ -1,0 +1,91 @@
+﻿
+@using TelephoneDirectory.Model.ViewModel
+@model List<VMAreaDepartment>
+
+@{
+    ViewBag.Title = "List";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+
+<!-- BEGIN PAGE CONTENT -->
+<div class="page-content page-thin">
+    <div class="row">
+        <div class="col-lg-12 portlets">
+
+            @if (TempData["ProcessResult"] != null)
+            {
+                <div class="alert alert-@TempData["AlertType"]" role="alert">
+                    @TempData["ProcessResult"].ToString()
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            }
+            <div class="alert" role="alert" id="postResult" style="display:none;">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <a href="/Admin/Department/Create" class="btn btn-sm btn-dark">
+                <i class="fa fa-plus"></i>&nbsp; Add New Department
+            </a>
+            <div class="panel">
+                <div class="panel-header">
+                    <h3><i class="fa fa-table"></i> <strong>Department</strong> Table</h3>
+                </div>
+                <div class="panel-content">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th class="col-md-1">#</th>
+                                <th class="col-md-10">Department Name</th>
+                                <th class="col-md-1"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @{
+                                var line = 1;
+                                foreach (var department in Model)
+                                {
+                                    <tr>
+                                        <td>@line</td>
+                                        <td>@department.Name</td>
+                                        
+                                        <td style="text-align:right;">
+                                            <a class="edit btn btn-sm btn-default" href="/Admin/Department/Edit/@department.DepartmentId"><i class="icon-note"></i></a>
+                                            <button class="delete btn btn-sm btn-danger" onclick="deleteDepartment(@department.DepartmentId)"><i class="icons-office-52"></i></button>
+                                        </td>
+                                    </tr>
+                                    line++;
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END PAGE CONTENT -->
+
+<script>
+    function deleteDepartment(departmentId) {
+        if (confirm("Are you sure about deleting this department?")) {
+            $.ajax({
+                url: "/Admin/Department/Delete",
+                type: "POST",
+                data: { id: departmentId },
+                success: function (data) {
+                    if (data.success) {
+                        alert(data.message)
+                        location.reload();
+                    }
+                    else
+                        $("#postResult").addClass("alert-danger").append(data.message).show();
+                }
+            });
+        }
+    };
+</script>

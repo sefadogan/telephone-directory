@@ -45,6 +45,7 @@
     <Compile Include="ViewModel\Partials\VMAreaSideBarMenu.cs" />
     <Compile Include="ViewModel\Partials\VMAreaTopBarMenu.cs" />
     <Compile Include="ViewModel\VMAreaAccountLogin.cs" />
+    <Compile Include="ViewModel\VMAreaDepartment.cs" />
     <Compile Include="ViewModel\VMAreaEmployeeEdit.cs" />
     <Compile Include="ViewModel\VMEmployee.cs" />
     <Compile Include="ViewModel\VMAreaEmployee.cs" />
