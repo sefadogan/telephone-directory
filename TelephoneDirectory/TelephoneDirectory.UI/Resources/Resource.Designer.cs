@@ -160,6 +160,15 @@ namespace MultiLanguage {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Employees.
+        /// </summary>
+        public static string EPLST_EMPLOYEES {
+            get {
+                return ResourceManager.GetString("EPLST_EMPLOYEES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to First Name.
         /// </summary>
         public static string EPLST_FIRST_NAME {

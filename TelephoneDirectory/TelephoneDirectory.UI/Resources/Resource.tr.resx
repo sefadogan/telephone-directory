@@ -150,6 +150,9 @@
   <data name="EMPS_TELEPHONE" xml:space="preserve">
     <value>Telefon</value>
   </data>
+  <data name="EPLST_EMPLOYEES" xml:space="preserve">
+    <value>Çalışanlar</value>
+  </data>
   <data name="EPLST_FIRST_NAME" xml:space="preserve">
     <value>Ad</value>
   </data>
