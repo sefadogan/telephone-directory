@@ -3,7 +3,7 @@
 @model List<VMEmployee>
 
 @{
-    ViewBag.Title = "List";
+    ViewBag.Title = MultiLanguage.Resource.EPLST_LIST;
 }
 
 <h2>Employees</h2>
@@ -22,9 +22,9 @@
     <thead>
         <tr>
             <th class="col-md-1">#</th>
-            <th class="col-md-3">First Name</th>
-            <th class="col-md-4">Last Name</th>
-            <th class="col-md-3">Telephone</th>
+            <th class="col-md-3">@MultiLanguage.Resource.EPLST_FIRST_NAME</th>
+            <th class="col-md-4">@MultiLanguage.Resource.EPLST_LAST_NAME</th>
+            <th class="col-md-3">@MultiLanguage.Resource.EPLST_TELEPHONE</th>
             <th class="col-md-1"></th>
         </tr>
     </thead>

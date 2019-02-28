@@ -83,3 +83,8 @@ D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\obj\Debug\TelephoneDirectory.UI.csproj.CopyComplete
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\obj\Debug\TelephoneDirectory.UI.dll
 D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\obj\Debug\TelephoneDirectory.UI.pdb
+D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\bin\tr\TelephoneDirectory.UI.resources.dll
+D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\obj\Debug\TelephoneDirectory.UI.Resources.Resource.resources
+D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\obj\Debug\TelephoneDirectory.UI.Resources.Resource.tr.resources
+D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\obj\Debug\TelephoneDirectory.UI.csproj.GenerateResource.cache
+D:\Projeler\GitHub\telephone-directory\TelephoneDirectory\TelephoneDirectory.UI\obj\Debug\tr\TelephoneDirectory.UI.resources.dll

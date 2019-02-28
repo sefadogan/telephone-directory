@@ -21,20 +21,22 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Employees", "List", "Employee")</li>
-                    <li>@Html.ActionLink("Login", "Login", "Account", new { area = "Admin" }, null)</li>
+                    <li>@Html.ActionLink(MultiLanguage.Resource.NVB_HOME, "Index", "Home")</li>
+                    <li>@Html.ActionLink(MultiLanguage.Resource.NVB_EMPLOYEES, "List", "Employee")</li>
                 </ul>
-
+                <ul class="nav navbar-nav navbar-right">
+                    <li>@Html.ActionLink(MultiLanguage.Resource.NVB_LOGIN, "Login", "Account", new { area = "Admin" }, null)</li>
+                    <li><a href="/Language/ChangeLanguage?language=tr"><img src="~/images/flags/tr.png" /></a></li>
+                    <li><a href="/Language/ChangeLanguage?language=en"><img src="~/images/flags/en.png" /></a></li>
+                </ul>
             </div>
-                
         </div>
     </div>
     <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - Telephone Directory | Coded by Sefa DOGAN.</p>
+            <p>&copy; @DateTime.Now.Year - @MultiLanguage.Resource.FTR_SIGNATURE</p>
         </footer>
     </div>
 

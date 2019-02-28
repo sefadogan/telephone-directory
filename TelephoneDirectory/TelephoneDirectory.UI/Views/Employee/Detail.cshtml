@@ -1,17 +1,17 @@
 ﻿@model TelephoneDirectory.DAL.Entities.Employee
 
 @{
-    ViewBag.Title = "Detail";
+    ViewBag.Title = MultiLanguage.Resource.EDET_DETAIL;
 }
 
-<h2>Employee Detail</h2>
+<h2>@MultiLanguage.Resource.EDET_EMPLOYEE_DETAIL</h2>
 
 
 <div>
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.FirstName)
+            @MultiLanguage.Resource.EDET_FIRST_NAME
         </dt>
 
         <dd>
@@ -19,7 +19,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.LastName)
+            @MultiLanguage.Resource.EDET_LAST_NAME
         </dt>
 
         <dd>
@@ -27,7 +27,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Telephone)
+            @MultiLanguage.Resource.EDET_TELEPHONE
         </dt>
 
         <dd>
@@ -35,7 +35,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Email)
+            @MultiLanguage.Resource.EDET_EMAIL
         </dt>
 
         <dd>
@@ -45,5 +45,5 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Back to List", "List")
+    @Html.ActionLink(@MultiLanguage.Resource.EDET_BACK_TO_LIST, "List")
 </p>
