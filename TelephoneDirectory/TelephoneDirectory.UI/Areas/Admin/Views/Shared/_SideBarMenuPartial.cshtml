@@ -6,7 +6,7 @@
 <div class="sidebar">
     <div class="logopanel">
         <h1>
-            <a href="/Admin/Dashboard/Index"></a>
+            <a href="/Admin/Employee/List"></a>
         </h1>
     </div>
     <div class="sidebar-inner">
@@ -15,64 +15,26 @@
                 <i class="icon icons-faces-users-01"></i>
                 <div class="user-details">
                     <h4>@Model.DisplayName</h4>
-                    <div class="dropdown user-login">
-                        <button class="btn btn-xs dropdown-toggle btn-rounded" type="button" data-toggle="dropdown" data-hover="dropdown" data-close-others="true" data-delay="300">
-                            <i class="online"></i><span>Available</span><i class="fa fa-angle-down"></i>
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#"><i class="busy"></i><span>Busy</span></a></li>
-                            <li><a href="#"><i class="turquoise"></i><span>Invisible</span></a></li>
-                            <li><a href="#"><i class="away"></i><span>Away</span></a></li>
-                        </ul>
-                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="menu-title">
-            Navigation
-            <div class="pull-right menu-settings">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true" data-delay="300">
-                    <i class="icon-settings"></i>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="#" id="reorder-menu" class="reorder-menu">Reorder menu</a></li>
-                    <li><a href="#" id="remove-menu" class="remove-menu">Remove elements</a></li>
-                    <li><a href="#" id="hide-top-sidebar" class="hide-top-sidebar">Hide / show user image</a></li>
-                </ul>
             </div>
         </div>
         <ul class="nav nav-sidebar">
             <li class="nav-parent">
                 <a href=""><i class="icon-user"></i><span>Employee Management</span><span class="fa arrow"></span></a>
                 <ul class="children collapse">
-                    <li><a href="/Admin/Employee/List"> <span class="pull-right badge badge-primary">16</span> Employee List</a></li>
+                    <li><a href="/Admin/Employee/List"> Employee List</a></li>
                     <li><a href="/Admin/Employee/Create">  Create Employee</a></li>
                 </ul>
             </li>
             <li class="nav-parent">
                 <a href=""><i class="icon-calendar"></i><span>Department Management</span><span class="fa arrow"></span></a>
                 <ul class="children collapse">
-                    <li><a href="/Admin/Department/List"> <span class="pull-right badge badge-primary">16</span> Department List</a></li>
+                    <li><a href="/Admin/Department/List"> Department List</a></li>
                     <li><a href="/Admin/Department/Create">  Create Department</a></li>
                 </ul>
             </li>
-            @*<li class="nav-parent">
-                <a href=""><i class="fa fa-bullhorn"></i><span>Announce Management</span><span class="fa arrow"></span></a>
-                <ul class="children collapse">
-                    <li><a href="/Admin/Announce/List"> <span class="pull-right badge badge-primary">16</span> Announce List</a></li>
-                    <li><a href="/Admin/Announce/Add">  Add Announce</a></li>
-                </ul>
-            </li>
-            <li><a href="/Report/Index"><i class="icon-layers"></i><span>Reports</span></a></li>
-            <li class="nav-parent">
-                <a href=""><i class="fa fa-envelope"></i><span>Mail</span><span class="fa arrow"></span></a>
-                <ul class="children collapse">
-                    <li><a href="/Admin/Mail/Inbox"> <span class="pull-right badge badge-primary">16</span> Inbox</a></li>
-                    <li><a href="/Admin/Mail/Send"> Send</a></li>
-                    <li><a href="/Admin/Mail/Trash"> Trash</a></li>
-                </ul>
-            </li>*@
         </ul>
+
         <!-- SIDEBAR WIDGET FOLDERS -->
         <div class="sidebar-footer clearfix">
             <a class="pull-left footer-settings" href="#" data-rel="tooltip" data-placement="top" data-original-title="Settings">

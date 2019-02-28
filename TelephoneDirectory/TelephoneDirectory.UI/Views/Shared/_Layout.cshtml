@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Telephone Directory</title>
+    <link rel="shortcut icon" href="~/Areas/Admin/assets/global/images/favicon.png" type="image/png">
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
@@ -22,10 +23,11 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("Employees", "List", "Employee")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Login", "Login", "Account", new { area = "Admin" }, null)</li>
                 </ul>
+
             </div>
+                
         </div>
     </div>
     <div class="container body-content">

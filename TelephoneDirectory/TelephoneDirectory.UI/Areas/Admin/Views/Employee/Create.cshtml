@@ -11,95 +11,77 @@
     List<Title> titles = ViewData["Titles"] as List<Title>;
 }
 
-<div class="row m-t-40">
-    <div class="col-md-12">
-        
-        <div class="content-panel" style="padding:15px;">
-            @if (TempData["ProcessResult"] != null)
-            {
-                <div class="alert alert-@TempData["AlertType"]" role="alert">
-                    @TempData["ProcessResult"].ToString()
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-            }
-            @using (Html.BeginForm("Create", "Employee", FormMethod.Post, new { @class = "form-signin" }))
-            {
-                <div class="form-horizontal">
-                    <div class="form-group">
-                        @Html.LabelFor(model => model.FirstName, htmlAttributes: new { @class = "control-label col-md-2" })
-                        <div class="col-md-10">
-                            @Html.EditorFor(model => model.FirstName, new { htmlAttributes = new { @class = "form-control", placeholder = "First Name", autocomplete = "off", required = "" } })
-                        </div>
-                    </div>
+<div style="margin: 100px 50px;">
+    <div class="header">
+        <h1>Create Employee</h1>
+        <hr />
+    </div>
 
-                    <div class="form-group">
-                        @Html.LabelFor(model => model.LastName, htmlAttributes: new { @class = "control-label col-md-2" })
-                        <div class="col-md-10">
-                            @Html.EditorFor(model => model.LastName, new { htmlAttributes = new { @class = "form-control", placeholder = "Last Name", autocomplete = "off", required = "" } })
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        @Html.LabelFor(model => model.Telephone, htmlAttributes: new { @class = "control-label col-md-2" })
-                        <div class="col-md-10">
-                            @Html.EditorFor(model => model.Telephone, new { htmlAttributes = new { @class = "form-control", placeholder = "Telephone", autocomplete = "off", maxlength = "10", required = "" } })
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
-                        <div class="col-md-10">
-                            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", placeholder = "Email", autocomplete = "off", required = "" } })
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
-                        <div class="col-md-10">
-                            @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", placeholder = "Password", autocomplete = "off", maxlength = 18, required = "" } })
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <div class="control-label col-md-2">
-                            <label>Title</label>
-                        </div>
-                        <div class="col-md-4">
-                            @Html.DropDownListFor(model => model.TitleId, new SelectList(titles, "TitleId", "Name"), "Select a title", new { @class = "form-control" })
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <div class="control-label col-md-2">
-                            <label>Department</label>
-                        </div>
-                        <div class="col-md-4">
-                            @Html.DropDownListFor(model => model.DepartmentId, new SelectList(departments, "DepartmentId", "Name"), "Select a department", new { @class = "form-control" })
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <div class="control-label col-md-2">
-                            <label>Supervisor</label>
-                        </div>
-                        <div class="col-md-4">
-                            @Html.DropDownListFor(model => model.SupervisorId, new SelectList(supervisors, "EmployeeId", "DisplayName"), "Select a supervisor", new { @class = "form-control" })
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <div class="col-md-offset-2 col-md-10">
-                            <input type="submit" value="Create" class="btn btn-success" />
-                        </div>
-                    </div>
-                </div>
-            }
-            <div>
-                <i class="fa fa-arrow-circle-left"></i> @Html.ActionLink("Back to List", "List")
+    <div class="row m-t-10">
+        @if (TempData["ProcessResult"] != null)
+        {
+            <div class="alert alert-@TempData["AlertType"]" role="alert">
+                @TempData["ProcessResult"].ToString()
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
+        }
+        <div class="col-xs-3">
+            @using (Html.BeginForm("Create", "Employee", FormMethod.Post))
+            {
+                <div class="form-group">
+                    <label class="control-label">First Name</label>
+                    <div class="append-icon">
+                        @Html.EditorFor(model => model.FirstName, new { htmlAttributes = new { @class = "form-control form-white", placeholder = "First Name", autocomplete = "off", required = "" } })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Last Name</label>
+                    <div class="append-icon">
+                        @Html.EditorFor(model => model.LastName, new { htmlAttributes = new { @class = "form-control form-white", placeholder = "Last Name", autocomplete = "off", required = "" } })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Telephone</label>
+                    <div class="append-icon">
+                        @Html.EditorFor(model => model.Telephone, new { htmlAttributes = new { @class = "form-control form-white", placeholder = "Telephone", autocomplete = "off", maxlength = "10", required = "" } })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Email</label>
+                    <div class="append-icon">
+                        @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control form-white", placeholder = "Email", autocomplete = "off", required = "" } })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Password</label>
+                    <div class="append-icon">
+                        @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control form-white", placeholder = "Password", autocomplete = "off", maxlength = 18, required = "" } })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Title</label>
+                    <div class="append-icon">
+                        @Html.DropDownListFor(model => model.TitleId, new SelectList(titles, "TitleId", "Name"), "Select a title", new { @class = "form-control" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Department</label>
+                    <div class="append-icon">
+                        @Html.DropDownListFor(model => model.DepartmentId, new SelectList(departments, "DepartmentId", "Name"), "Select a department", new { @class = "form-control" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Supervisor</label>
+                    <div class="append-icon">
+                        @Html.DropDownListFor(model => model.SupervisorId, new SelectList(supervisors, "EmployeeId", "DisplayName"), "Select a supervisor", new { @class = "form-control" })
+                    </div>
+                </div>
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-primary">Create</button>
+                </span>
+            }
         </div>
     </div>
 </div>
-
