@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = @MultiLanguage.Resource.INSRV_INTERNAL_SERVER;
+    Layout = "~/Views/Shared/_ErrorLayout.cshtml";
+}
+
+<div class="error-page">
+    <div class="error-page-type">
+        <h1>Oops!</h1>
+        <h2>500 - @MultiLanguage.Resource.INSRV_UNEXPECTED_ERROR_OCCURED</h2>
+    </div>
+    <a href="/Home/Index">@MultiLanguage.Resource.INSRV_BACK_TO_HOME</a>
+</div>
+
+

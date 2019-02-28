@@ -198,6 +198,21 @@
   <data name="HOME_WEB_HOSTING_CONTENT" xml:space="preserve">
     <value>You can easily find a web hosting company that offers the right mix of features and price for your applications.</value>
   </data>
+  <data name="INSRV_BACK_TO_HOME" xml:space="preserve">
+    <value>Back to Homepage</value>
+  </data>
+  <data name="INSRV_INTERNAL_SERVER" xml:space="preserve">
+    <value>Internal Server</value>
+  </data>
+  <data name="INSRV_UNEXPECTED_ERROR_OCCURED" xml:space="preserve">
+    <value>An unexpected error occured</value>
+  </data>
+  <data name="NTFND_BACK_TO_HOME" xml:space="preserve">
+    <value>Back to Homepage</value>
+  </data>
+  <data name="NTFND_THIS_PAGE_HAS_BEEN_REMOVED" xml:space="preserve">
+    <value>This page has been removed</value>
+  </data>
   <data name="NVB_EMPLOYEES" xml:space="preserve">
     <value>Employees</value>
   </data>

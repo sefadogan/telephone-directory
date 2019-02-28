@@ -304,6 +304,51 @@ namespace MultiLanguage {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Back to Homepage.
+        /// </summary>
+        public static string INSRV_BACK_TO_HOME {
+            get {
+                return ResourceManager.GetString("INSRV_BACK_TO_HOME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Internal Server.
+        /// </summary>
+        public static string INSRV_INTERNAL_SERVER {
+            get {
+                return ResourceManager.GetString("INSRV_INTERNAL_SERVER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to An unexpected error occured.
+        /// </summary>
+        public static string INSRV_UNEXPECTED_ERROR_OCCURED {
+            get {
+                return ResourceManager.GetString("INSRV_UNEXPECTED_ERROR_OCCURED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Back to Homepage.
+        /// </summary>
+        public static string NTFND_BACK_TO_HOME {
+            get {
+                return ResourceManager.GetString("NTFND_BACK_TO_HOME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This page has been removed.
+        /// </summary>
+        public static string NTFND_THIS_PAGE_HAS_BEEN_REMOVED {
+            get {
+                return ResourceManager.GetString("NTFND_THIS_PAGE_HAS_BEEN_REMOVED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Employees.
         /// </summary>
         public static string NVB_EMPLOYEES {

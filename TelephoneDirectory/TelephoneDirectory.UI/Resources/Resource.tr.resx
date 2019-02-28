@@ -198,6 +198,12 @@
   <data name="HOME_WEB_HOSTING_CONTENT" xml:space="preserve">
     <value>Uygulamalarınız için doğru özellik ve fiyat karışımını sunan bir web barındırma şirketini kolayca bulabilirsiniz.</value>
   </data>
+  <data name="NTFND_BACK_TO_HOME" xml:space="preserve">
+    <value>Anasayfaya Geri Dön</value>
+  </data>
+  <data name="NTFND_THIS_PAGE_HAS_BEEN_REMOVED" xml:space="preserve">
+    <value>Bu sayfa kaldırılmış</value>
+  </data>
   <data name="NVB_EMPLOYEES" xml:space="preserve">
     <value>Çalışanlar</value>
   </data>
